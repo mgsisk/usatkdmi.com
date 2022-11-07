@@ -22,6 +22,7 @@ Vagrant.configure('2') do |conf|
     'LOGIN_SHELL_CNF' => ('.zprofile' if zsh),
     'LOGIN_SHELL' => ('/bin/zsh' if zsh),
     'ZONE' => ENV['ZONE'],
+    'JEKYLL_DIR' => '/vagrant/src',
   }.compact
 
   conf.trigger.before :destroy, :halt, :reload, :suspend do |t|
