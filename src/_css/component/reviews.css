@@ -1,0 +1,43 @@
+.reviews {
+  display: flex;
+  flex-flow: column;
+  margin: 0 0 var(--vr);
+}
+
+.reviews figure {
+  margin: 0 calc(var(--vr) * -1);
+  padding: var(--vr);
+}
+
+.reviews figure:nth-child(3n+1) {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.reviews figure:nth-child(3n+3) {
+  background: var(--color-accent-alt);
+  color: var(--color-white);
+}
+
+.reviews blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+@media (--medium) {
+  .reviews {
+    flex-flow: row wrap;
+  }
+
+  .reviews figure {
+    border: 0.1rem solid var(--color-background);
+    flex: 0 1 50%;
+    margin: 0;
+  }
+}
+
+@media (--large) {
+  .reviews figure {
+    flex: 0 1 33%;
+  }
+}

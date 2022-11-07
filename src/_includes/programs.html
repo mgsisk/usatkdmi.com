@@ -1,0 +1,9 @@
+{% for program in site.data.programs %}
+  <article>
+    <div class="hero">
+      {{ program.title | prepend: '## ' | markdownify }}
+      <img src="{{ program.title | slugify | append: '.jpg' | prepend: '/srv/' | relative_url }}" alt="">
+    </div>
+    {{ program.content | markdownify }}
+  </article>
+{% endfor %}

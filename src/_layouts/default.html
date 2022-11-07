@@ -1,0 +1,52 @@
+{% assign nav_pages = site.pages | where_exp: 'page', 'page.nav' | sort: 'nav.order' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" property="og:description" content="{{ page.excerpt | replace: 'site.description', site.description | markdownify | strip_html | strip_newlines | truncate: 160 }}">
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <title>{% if page.title != 'Home' %}{{ page.title | smartify }} • {% endif %}{{ site.title }}</title>
+    <link rel="canonical" href="{{ page.url | remove: '/index.html' | remove: '/index' | absolute_url }}">
+    <link rel="icon" href="{{ '/favicon.ico' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/srv/style.css' | relative_url }}">
+  </head>
+  <a href="#nav">Skip to navigation</a>
+  <body id="top">
+    <header>
+      <a href="{{ '/' | relative_url }}">{% include logo.svg %}</a>
+    </header>
+    {% if page.title == 'Home' %}
+    <div class="hero">
+      {{ page.title | replace: 'Home', site.title | prepend: '# ' | markdownify }}
+      {{ page.excerpt | replace: 'site.description', site.description | markdownify }}
+      <video src="{{ '/srv/hero.mp4' | relative_url }}" poster="{{ '/srv/hero.jpg' | relative_url }}" autoplay loop muted playsinline></video>
+    </div>
+    {% endif %}
+    <main>
+      {% if page.title != 'Home' %}
+        {{ page.title | replace: 'Home', site.title | prepend: '# ' | markdownify }}
+        {{ page.excerpt | replace: 'site.description', site.description | markdownify }}
+      {% endif %}
+      {{ content }}
+    </main>
+    <nav id="nav">
+      <ul>
+        {% for nav_page in nav_pages %}
+          <li{% if page.permalink == nav_page.permalink %} class="active"{% endif %}><a href="{{ nav_page.permalink | relative_url }}">{{ nav_page.nav.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+    <address>
+      <ul>
+        {% for info in site.data.contact %}
+          <li><a href="{{ info.url | relative_url }}">{{ info.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </address>
+    <footer>
+      <a href="{{ '/' | relative_url }}">© 1994–{{ 'now' | date: '%Y' }} {{ site.title }}</a>
+      <a href="#top">Back to top</a>
+    </footer>
+    <script src="{{ '/srv/script.js' | relative_url }}"></script>
+  </body>
+</html>

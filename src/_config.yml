@@ -1,0 +1,19 @@
+title: USA Tae Kwon Do
+description: >
+  Build self-confidence, self-esteem, and learn self-defense while you get fit,
+  lose weight, and have fun at USA Tae Kwon Do. **Be strong!**
+url: https://usatkdmi.com
+permalink: /events/:title
+include:
+  - _pages
+
+safe: true
+
+defaults:
+  - scope:
+      path: ''
+    values:
+      hero:
+        video: hero.mp4
+        image: hero.jpg
+      layout: default

@@ -1,0 +1,8 @@
+<div class="reviews">
+  {% for review in site.data.reviews %}
+    <figure>
+      {{ review.content | prepend: '> ' | markdownify }}
+      <figcaption>{{ review.title | smartify }}</figcaption>
+    </figure>
+  {% endfor %}
+</div>

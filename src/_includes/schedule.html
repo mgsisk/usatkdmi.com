@@ -1,0 +1,13 @@
+<div class="schedule">
+  {% for day in site.data.schedule %}
+    <div class="day">
+      {{ day.title | prepend: '## ' | markdownify }}
+      <dl>
+        {% for class in day.classes %}
+          <dt class="{{ class.title | slugify }}">{{ class.init | date: '%l:%M%P' }} – {{ class.term | date: '%l:%M%P' }}</dt>
+          <dd class="{{ class.title | slugify }}"><a href="{{ class.title | slugify | replace: 'kids-', '' | replace: 'family-', '' | prepend: '/programs#' | relative_url }}">{{ class.title }}</a></dd>
+        {% endfor %}
+      </dl>
+    </div>
+  {% endfor %}
+</div>

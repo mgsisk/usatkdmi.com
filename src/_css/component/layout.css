@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-flow: column;
+}
+
+main {
+  padding: 0 max(var(--vr), calc(50% - var(--max-width) / 2)) var(--vr);
+  flex: 1;
+}
+
+nav {
+  order: -9;
+}
+
+address {
+  order: -1;
+}
+
+@media (--medium) {
+  main {
+    padding-top: var(--vr);
+  }
+}

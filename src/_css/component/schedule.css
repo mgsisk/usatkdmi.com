@@ -1,0 +1,69 @@
+.schedule {
+  display: flex;
+  flex-flow: column;
+}
+
+.schedule dt {
+  padding: 0 calc(var(--vr) * 0.5);
+}
+
+.schedule dd {
+  font-size: var(--font-size-02);
+  line-height: var(--line-height-02);
+  margin: 0 0 var(--vr);
+  padding: calc(var(--vr) * 0.5);
+}
+
+dd.private-lessons {
+  background: var(--color-foreground);
+  color: var(--color-background);
+}
+
+dd.kids-taekwondo {
+  background: var(--color-accent-alt);
+  color: var(--color-white);
+}
+
+dd.family-taekwondo {
+  background: var(--color-accent);
+  color: var(--color-white);
+}
+
+.schedule a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.schedule a:--enter {
+  text-decoration: underline;
+}
+
+.schedule .private-lessons a {
+  color: var(--color-background);
+}
+
+.schedule .aerobic-kickboxing a {
+  color: var(--color-foreground);
+}
+
+@media (--small) {
+  .schedule {
+    flex-flow: row wrap;
+    gap: var(--vr);
+  }
+
+  .day {
+    flex: 0 1 calc(50% - var(--vr) / 2);
+  }
+}
+
+@media (--large) {
+  .schedule {
+    flex-flow: row wrap;
+    gap: var(--vr);
+  }
+
+  .day {
+    flex: 0 1 calc(33% - var(--vr) / 1.5);
+  }
+}

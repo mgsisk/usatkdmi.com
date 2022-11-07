@@ -1,0 +1,26 @@
+footer {
+  background: var(--color-accent-alt);
+  color: var(--color-white);
+  display: flex;
+  justify-content: space-between;
+  padding: calc(var(--vr) / 2) max(var(--vr), calc(50% - var(--max-width) / 2));
+}
+
+footer a {
+  color: var(--color-white);
+  display: block;
+  margin: calc(var(--vr) / 2 * -1) 0;
+  padding: calc(var(--vr) / 2) var(--vr);
+  text-decoration: none;
+  text-underline-offset: 0.1em;
+}
+
+footer a:--enter {
+  color: inherit;
+  text-decoration: underline;
+}
+
+footer a:active {
+  background: var(--color-background);
+  color: var(--color-accent-alt);
+}

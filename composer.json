@@ -1,0 +1,10 @@
+{
+    "name": "mgsisk/usatkdmi.com",
+    "license": "ISC",
+    "authors": [
+        {
+            "name": "Michael Sisk <me@mgsisk.com>"
+        }
+    ],
+    "require": {}
+}
