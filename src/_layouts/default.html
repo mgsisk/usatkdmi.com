@@ -15,6 +15,9 @@
     <header>
       <a href="{{ '/' | relative_url }}">{% include logo.svg %}</a>
     </header>
+    {% if page.alert %}
+      <a href="{{ page.alert.url }}">{{ page.alert.msg }}</a>
+    {% endif %}
     {% if page.title == 'Home' %}
     <div class="hero">
       {{ page.title | replace: 'Home', site.title | prepend: '# ' | markdownify }}
