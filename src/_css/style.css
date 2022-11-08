@@ -1,6 +1,7 @@
 @import 'conf.css';
 @import 'base.css';
 @import 'component/address.css';
+@import 'component/alert.css';
 @import 'component/footer.css';
 @import 'component/header.css';
 @import 'component/hero.css';
