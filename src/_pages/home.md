@@ -5,7 +5,7 @@ permalink: /
 ---
 
 Established in 1994, {{ site.title }} has been Kalamazoo's premier [taekwondo][]
-dojang for nearly thirty years. Grand Master M'Hammed Bouabdellaoui (7th Dan,
+dojang for nearly thirty years. Grand Master M'Hammed Bouabdellaoui (8th Dan,
 [World Taekwondo][]) is a certified personal trainer and
 [Michigan State University][] Hall of Fame Inductee dedicated to helping others
 gain confidence, discipline, and health. Grand Master M'Hammed understands that
