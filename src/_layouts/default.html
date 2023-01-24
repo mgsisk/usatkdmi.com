@@ -37,6 +37,7 @@
         {% for nav_page in nav_pages %}
           <li{% if page.permalink == nav_page.permalink %} class="active"{% endif %}><a href="{{ nav_page.permalink | relative_url }}">{{ nav_page.nav.title }}</a></li>
         {% endfor %}
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSef1ZFIwntGhN8bIc7Z4pDWvSuJ4a28UV7-ncklYppySCozDw/viewform?vc=0&c=0&w=1&flr=0">Free Trial</a></li>
       </ul>
     </nav>
     <address>
