@@ -2,9 +2,9 @@
 title: Enter the House of Discipline
 excerpt: Start your fitness journey today at USA Tae Kwon Do.
 permalink: /join/
-nav:
-  title: Free Trial
-  order: 99
+# nav:
+#   title: Free Trial
+#   order: 99
 ---
 
 Ready to gain confidence, fitness, and health at {{ site.title }}? Try us out
