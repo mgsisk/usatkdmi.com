@@ -11,9 +11,9 @@ safe: true
 
 defaults:
   - scope:
-      path: ''
+      path: ""
     values:
       layout: default
       alert:
-        url: https://usatkdmichamp2023.eventbrite.com
-        msg: Get ready for the 2023 USA Tae Kwon Do Championships
+        url: https://usatkdmichamp2024.eventbrite.com
+        msg: Get ready for the 2024 USA Tae Kwon Do Championships
