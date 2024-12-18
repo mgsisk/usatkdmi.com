@@ -1,5 +1,6 @@
 .bundle
-/src/_site/
+.jekyll-cache
 /_site/
 /node_modules/
+/src/_site/
 /vendor/
