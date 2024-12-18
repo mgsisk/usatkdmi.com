@@ -7,8 +7,8 @@ nav:
   order: 30
 ---
 
-Our schedule was last updated on  {{ 'now' | date: '%B %-d, %Y' }}.
-[Check our Facebook group][] for weather-related closures.
+Our schedule was last updated on {{ 'now' | date: '%B %-d, %Y' }}.
+[Check our Facebook group][] for holiday and weather-related closures.
 
 {% include schedule.html %}
 

@@ -13,13 +13,13 @@
   border-color: var(--color-foreground);
   border-style: solid;
   border-width: calc(var(--vr) / 2) 0;
-  content: '';
+  content: "";
   display: block;
   height: 80%;
   left: 10%;
   position: absolute;
-  transition:
-    border-color var(--transition-duration) var(--transition-timing-function),
+  transition: border-color var(--transition-duration)
+      var(--transition-timing-function),
     transform var(--transition-duration) var(--transition-timing-function);
   top: 10%;
   width: 80%;
@@ -28,13 +28,13 @@
 [href="#nav"]:before {
   background: var(--color-foreground);
   border: var(--color-foreground) solid calc(var(--vr) / 16);
-  content: '';
+  content: "";
   display: block;
   height: calc(var(--vr) / 2);
   top: calc(50% - var(--vr) / 4);
   position: absolute;
-  transition:
-    background-color var(--transition-duration) var(--transition-timing-function),
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
     border-image var(--transition-duration) var(--transition-timing-function),
     transform var(--transition-duration) var(--transition-timing-function);
   width: 100%;
@@ -55,22 +55,23 @@
 [href="#top"] {
   clip: rect(0 0 0 0);
   top: calc(var(--vr) * 18.5);
-  transition: transform var(--transition-duration) var(--transition-timing-function);
+  transition: transform var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 [href="#top"]:after,
 [href="#top"]:before {
   background: var(--color-foreground);
   border: 0.1em solid transparent;
-  content: '';
+  content: "";
   display: block;
   height: calc(var(--vr) / 2);
   left: 10%;
   position: absolute;
   top: calc(50% - var(--vr) / 4);
   transform: rotate(45deg);
-  transition:
-    background-color var(--transition-duration) var(--transition-timing-function),
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
     border var(--transition-duration) var(--transition-timing-function);
   width: 90%;
 }
@@ -115,7 +116,8 @@ nav li {
 }
 
 nav a {
-  background: linear-gradient(var(--color-accent-alt), var(--color-accent-alt)) 0 0 no-repeat;
+  background: linear-gradient(var(--color-accent-alt), var(--color-accent-alt))
+    0 0 no-repeat;
   background-size: 0 100%;
   color: var(--color-white);
   display: block;
@@ -124,8 +126,8 @@ nav a {
   padding: calc(var(--vr) / 2) var(--vr);
   text-decoration: none;
   text-underline-offset: 0.1em;
-  transition:
-    background-size var(--transition-duration) var(--transition-timing-function),
+  transition: background-size var(--transition-duration)
+      var(--transition-timing-function),
     border var(--transition-duration) var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function),
     text-shadow var(--transition-duration) var(--transition-timing-function);
@@ -176,7 +178,8 @@ nav li:last-child {
   }
 
   nav li:last-child a {
-    background: linear-gradient(var(--color-accent), var(--color-accent)) 0 100% no-repeat;
+    background: linear-gradient(var(--color-accent), var(--color-accent)) 0 100%
+      no-repeat;
     background-size: 100% 0;
     border: 0.2em solid inherit;
     color: inherit;
@@ -201,7 +204,7 @@ nav li:last-child {
 
   [href="#top"],
   nav:target li:last-child {
-    top: calc(var(--vr) * 15.5);
+    top: calc(var(--vr) * 18);
   }
 }
 
@@ -254,7 +257,8 @@ nav li:last-child {
   }
 
   nav a {
-    background: linear-gradient(var(--color-accent), var(--color-accent)) 0 100% no-repeat;
+    background: linear-gradient(var(--color-accent), var(--color-accent)) 0 100%
+      no-repeat;
     background-size: 100% 0;
     border: 0.2em solid transparent;
     color: inherit;
