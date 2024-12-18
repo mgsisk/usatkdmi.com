@@ -1,0 +1,12 @@
+.media {
+  display: grid;
+  gap: var(--vr);
+  grid-template: auto / repeat(
+      auto-fill,
+      minmax(min(100%, calc(var(--max-width) / 2.5)), 1fr)
+    );
+  margin: 0 min(var(--vr) * -1, var(--vr) / -2 + -50vw - var(--max-width) / -2)
+    var(--vr);
+  padding: 0 var(--vr);
+  width: 100vw;
+}

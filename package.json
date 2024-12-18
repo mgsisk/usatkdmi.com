@@ -6,7 +6,8 @@
   "scripts": {
     "lint.css": "stylelint src/**/*.css",
     "make.css": "postcss src/_css/style.css -o src/srv/style.css",
-    "make": "vagrant ssh -c 'sudo jekyll build -d /srv/web -s /vagrant/src -w --force_polling'",
+    "make": "docker build -t ${PWD##*/}:latest .",
+    "serve": "docker run -l dev.orbstack.domains=${PWD##*/}.local --rm -v ${PWD}:/srv/repo ${PWD##*/}",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch.css": "chokidar 'src/_css/**/*.css' -c 'npm run make.css'"
   },
@@ -15,10 +16,10 @@
   "license": "ISC",
   "devDependencies": {
     "chokidar-cli": "^3.0.0",
-    "cssnano": "^5.1.1",
-    "postcss-cli": "^9.1.0",
-    "postcss-import": "^14.0.2",
-    "postcss-preset-env": "^7.4.2",
-    "stylelint": "^14.5.3"
+    "cssnano": "^7.0.6",
+    "postcss-cli": "^11.0.0",
+    "postcss-import": "^16.1.0",
+    "postcss-preset-env": "^10.1.2",
+    "stylelint": "^16.12.0"
   }
 }
