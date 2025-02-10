@@ -16,6 +16,9 @@ defaults:
       path: ""
     values:
       layout: default
+      alert:
+        url: https://usatkdmichamp2025.eventbrite.com
+        msg: Get ready for the USA Tae Kwon Do Championships
 
 include:
   - _pages
