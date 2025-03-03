@@ -1,6 +1,3 @@
-.bundle
-.jekyll-cache
-/_site/
-/node_modules/
-/src/_site/
-/vendor/
+.astro/
+dist/
+node_modules/
