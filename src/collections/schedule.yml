@@ -1,0 +1,62 @@
+- id: 0
+  day: Monday
+  classes:
+    - title: Private Lessons
+      init: 1:00pm
+      term: 4:30pm
+    - title: Kids Taekwondo
+      init: 5:00pm
+      term: 6:00pm
+
+- id: 1
+  day: Tuesday
+  classes:
+    - title: Private Lessons
+      init: 1:00pm
+      term: 4:30pm
+    - title: Kids Taekwondo
+      init: 5:00pm
+      term: 6:00pm
+    - title: Family Taekwondo
+      init: 6:30pm
+      term: 7:30pm
+
+- id: 2
+  day: Wednesday
+  classes:
+    - title: Private Lessons
+      init: 1:00pm
+      term: 4:30pm
+    - title: Kids Taekwondo
+      init: 5:00pm
+      term: 6:00pm
+
+- id: 3
+  day: Thursday
+  classes:
+    - title: Private Lessons
+      init: 1:00pm
+      term: 4:30pm
+    - title: Kids Taekwondo
+      init: 5:00pm
+      term: 6:00pm
+    - title: Family Taekwondo
+      init: 6:30pm
+      term: 7:30pm
+
+- id: 4
+  day: Friday
+  classes:
+    - title: Private Lessons
+      init: 1:00pm
+      term: 4:30pm
+    - title: Kids Taekwondo
+      init: 5:00pm
+      term: 6:00pm
+
+- id: 5
+  day: Saturday
+  classes:
+    - title: Kids Taekwondo
+      init: 10:00am
+      term: 11:00am

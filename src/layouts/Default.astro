@@ -1,0 +1,67 @@
+---
+import '@style/style.css'
+import Logo from '@component/logo.svg'
+
+interface Props {
+  frontmatter?: {
+    title: string;
+    excerpt: string;
+  };
+  title: string;
+  excerpt: string;
+}
+
+const {title, excerpt} = Astro.props.frontmatter ? Astro.props.frontmatter : Astro.props
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content={excerpt}>
+    <meta name="viewport" content="initial-scale=1,width=device-width">
+    <title>{Astro.url.pathname === "/" ? "USA Tae Kwon Do" : `${title} • USA Tae Kwon Do`}</title>
+    <link rel="author" href="/humans.txt">
+    <link rel="canonical" href={Astro.url}>
+    <link rel="icon" href="/srv/icon.svg">
+    <link rel="sitemap" href="/sitemap-index.xml">
+  </head>
+  <body id="top">
+    <a href="#nav">Skip to navigation</a>
+    <header>
+      <a href="/"><Logo></a>
+    </header>
+    <a href="https://usatkdmichamp2025.eventbrite.com/">Get ready for the USA Tae Kwon Do Championships</a>
+    {Astro.url.pathname === "/" ? <div class="hero">
+      <h1>USA Tae Kwon Do</h1>
+      <p>{excerpt}</p>
+      <video src="/srv/hero.mp4" poster="/srv/hero.jpg" autoplay loop muted playsinline></video>
+    </div> : null}
+    <main>
+      {Astro.url.pathname !== "/" ? <h1>{title}</h1><p>{excerpt}</p> : null}
+      <slot/>
+    </main>
+    <nav id="nav">
+      <ul>
+        <li class={Astro.url.pathname.match(/^\/programs/) ? "active" : ""}><a href="/programs">Programs</a></li>
+        <li class={Astro.url.pathname.match(/^\/instructors/) ? "active" : ""}><a href="/instructors">Instructors</a></li>
+        <li class={Astro.url.pathname.match(/^\/schedule/) ? "active" : ""}><a href="/schedule">Schedule</a></li>
+        <li class={Astro.url.pathname.match(/^\/location/) ? "active" : ""}><a href="/location">Location</a></li>
+        <li class={Astro.url.pathname.match(/^\/media/) ? "active" : ""}><a href="/media">Media</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSef1ZFIwntGhN8bIc7Z4pDWvSuJ4a28UV7-ncklYppySCozDw/viewform?vc=0&c=0&w=1&flr=0">Free Trial</a></li>
+      </ul>
+    </nav>
+    <address>
+      <ul>
+        <li><a href="https://goo.gl/maps/V9zSx3SNn5AcekcBA">125 Peekstock Rd, Kalamazoo, MI 49001</a></li>
+        <li><a href="tel:+12693431072">(269) 343-1072</a></li>
+        <li><a href="mailto:tkd@usatkdmi.com">tkd@usatkdmi.com</a></li>
+        <li><a href="https://facebook.com/usatkdmi">Facebook</a></li>
+        <li><a href="https://instagram.com/usatkdmi">Instagram</a></li>
+      </ul>
+    </address>
+    <footer>
+      <a href="/">© 1994–{(new Date).getFullYear()} USA Tae Kwon Do</a>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
