@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+
+const reviews = await getCollection('reviews');
+---
+<div class="reviews">
+  {reviews.map(review=> (
+    <figure>
+      <p>{review.data.content}</p>
+      <figcaption>{review.data.title}</figcaption>
+    </figure>
+  ))}
+</div>
