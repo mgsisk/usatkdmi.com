@@ -1,25 +1,36 @@
 {
   "name": "usatkdmi.com",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "type": "module",
+  "browserslist": [
+    "defaults"
+  ],
   "scripts": {
-    "lint.css": "stylelint src/**/*.css",
-    "make.css": "postcss src/_css/style.css -o src/srv/style.css",
-    "make": "docker build -t ${PWD##*/}:latest .",
-    "serve": "docker run -l dev.orbstack.domains=${PWD##*/}.local --rm -v ${PWD}:/srv/repo ${PWD##*/}",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "watch.css": "chokidar 'src/_css/**/*.css' -c 'npm run make.css'"
+    "prepublishOnly": "npm run make",
+    "publish": "wrangler pages deploy",
+    "dev": "wrangler types; wrangler pages dev --live-reload",
+    "make": "astro build",
+    "test": "stylelint --fix src/styles; tsc --noEmit",
+    "watch": "chokidar 'public/**/*' 'src/**/*' -c 'npm run make'"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "@astrojs/mdx": "^4.1.0",
+    "@astrojs/sitemap": "^3.2.1",
+    "astro": "^5.4.1",
+    "resend": "^4.1.2"
+  },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250224.0",
+    "@eslint/js": "^9.21.0",
     "chokidar-cli": "^3.0.0",
     "cssnano": "^7.0.6",
-    "postcss-cli": "^11.0.0",
-    "postcss-import": "^16.1.0",
-    "postcss-preset-env": "^10.1.2",
-    "stylelint": "^16.12.0"
+    "cssnano-preset-advanced": "^7.0.6",
+    "postcss-preset-env": "^10.1.5",
+    "prettier": "^3.5.2",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard": "^37.0.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.25.0",
+    "wrangler": "^3.111.0"
   }
 }
