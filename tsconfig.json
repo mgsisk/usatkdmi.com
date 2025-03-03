@@ -1,0 +1,16 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "include": [".astro/types.d.ts", "**/*"],
+  "exclude": ["dist"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@collection/*": ["src/collections/*"],
+      "@component/*": ["src/components/*"],
+      "@image/*": ["src/images/*"],
+      "@layout/*": ["src/layouts/*"],
+      "@style/*": ["src/styles/*"]
+    },
+    "types": ["@cloudflare/workers-types"]
+  }
+}
