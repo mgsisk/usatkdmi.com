@@ -10,7 +10,6 @@
       "@image/*": ["src/images/*"],
       "@layout/*": ["src/layouts/*"],
       "@style/*": ["src/styles/*"]
-    },
-    "types": ["@cloudflare/workers-types"]
+    }
   }
 }
