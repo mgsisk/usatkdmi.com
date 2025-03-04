@@ -7,12 +7,11 @@
     "defaults"
   ],
   "scripts": {
-    "prepublishOnly": "npm run make",
-    "publish": "wrangler pages deploy",
-    "dev": "wrangler types; wrangler pages dev --live-reload",
-    "make": "astro build",
+    "prestart": "astro build",
+    "pretest": "astro build",
+    "start": "astro dev",
     "test": "stylelint --fix src/styles; tsc --noEmit",
-    "watch": "chokidar 'public/**/*' 'src/**/*' -c 'npm run make'"
+    "watch": "chokidar 'public/**/*' 'src/**/*' -c 'astro build'"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.0",
@@ -21,7 +20,6 @@
     "resend": "^4.1.2"
   },
   "devDependencies": {
-    "@cloudflare/workers-types": "^4.20250224.0",
     "@eslint/js": "^9.21.0",
     "chokidar-cli": "^3.0.0",
     "cssnano": "^7.0.6",
@@ -31,7 +29,6 @@
     "stylelint": "^16.15.0",
     "stylelint-config-standard": "^37.0.0",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.25.0",
-    "wrangler": "^3.111.0"
+    "typescript-eslint": "^8.25.0"
   }
 }
