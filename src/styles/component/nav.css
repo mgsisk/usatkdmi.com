@@ -224,10 +224,12 @@ nav li:last-child {
     width: auto;
   }
 
+  /* Ignoring the descending specificity rule for this. */
+  /* stylelint-disable*/
   [href="#top"]:--enter {
-    /* stylelint-disable-line no-descending-specificity */
     transform: none;
   }
+  /* stylelint-enable */
 
   [href="#top"]::after,
   [href="#top"]::before {
