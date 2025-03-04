@@ -7,6 +7,7 @@
     "defaults"
   ],
   "scripts": {
+    "prepare": "astro build",
     "prestart": "astro build",
     "pretest": "astro build",
     "start": "astro dev",
