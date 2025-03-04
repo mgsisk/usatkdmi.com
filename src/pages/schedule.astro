@@ -1,0 +1,23 @@
+---
+import Layout from "@layout/Default.astro";
+import { getCollection } from 'astro:content';
+
+const schedule = await getCollection('schedule');
+---
+
+<Layout title="Schedule" excerpt="Join us at USA Tae Kwon Do to get fit, lose weight, and have fun!">
+  <p><a href="https://facebook.com/usatkdmi">Check our Facebook group</a> for holidy and weather-related closures.</p>
+  <div class="schedule">
+    {schedule.map(weekday=> (
+      <div class="day">
+        <h2>{weekday.data.day}</h2>
+        <dl>
+          {weekday.data.classes.map(session=> (
+            <dt>{session.init} – {session.term}</dt>
+            <dd class={session.title.toLowerCase().replace(' ', '-')}><a href={"/programs#" + session.title.toLowerCase().replace(' ', '-').replace(/kids-|family-/, '')}>{session.title}</a></dd>
+          ))}
+        </dl>
+      </div>
+    ))}
+  </div>
+</Layout>

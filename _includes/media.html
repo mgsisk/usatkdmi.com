@@ -1,8 +1,0 @@
-<div class="media">
-  {% for image in site.static_files %} {% if image.extname == '.jpg' and
-  image.path contains '/media' %}
-  <a href="{{ image.path }}" target="_blank"
-    ><img src="{{ image.path }}" alt=""
-  /></a>
-  {% endif %} {% endfor %}
-</div>

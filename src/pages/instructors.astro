@@ -1,0 +1,25 @@
+---
+import Layout from "@layout/Default.astro";
+import { getCollection, render } from 'astro:content';
+import { Image } from "astro:assets";
+
+const instructors = await getCollection('instructors');
+---
+
+<Layout title="Instructors" excerpt="Gain confidence, discipline, and health with USA Tae Kwon Do's master instructors.">
+  {instructors.sort((a,b)=> a.data.id - b.data.id).map(async instructor=> {
+    const { Content } = await render(instructor)
+
+    return (
+    <article>
+    <div class="hero">
+      <hgroup id={instructor.data.title.toLowerCase().replace(/[^a-z0-9-_]/g, '').replace(/\s+|-+/g, '-')}>
+        <h2>{instructor.data.title}</h2>
+        <h3>{instructor.data.rank}</h3>
+      </hgroup>
+      <Image src={instructor.data.image} alt={"Portrait of " + instructor.data.title}/>
+    </div>
+    <Content/>
+  </article>
+  )})}
+</Layout>
