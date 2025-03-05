@@ -46,6 +46,8 @@ const reviews = defineCollection({
   loader: file("src/collections/reviews.yml"),
   schema: z.object({
     title: z.string(),
+    slug: z.string(),
+    url: z.string(),
     content: z.string(),
   }),
 });

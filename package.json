@@ -2,25 +2,24 @@
   "name": "usatkdmi.com",
   "version": "1.0.0",
   "type": "module",
-  "license": "BSD-3-Clause",
+  "license": "MIT",
   "browserslist": [
     "defaults"
   ],
   "scripts": {
-    "prepare": "astro build",
+    "posttest": "stylelint --custom-formatter node_modules/stylelint-sarif-formatter/index.js -o .sarif/stylelint.sarif src/styles",
     "prestart": "astro build",
-    "pretest": "astro build",
-    "start": "astro dev",
-    "test": "stylelint --fix src/styles; tsc --noEmit",
-    "watch": "chokidar 'public/**/*' 'src/**/*' -c 'astro build'"
+    "pretest": "astro check",
+    "start": "chokidar 'public/**/*' 'src/**/*' -c 'astro build' & astro preview",
+    "test": "stylelint --fix src/styles; tsc --noEmit"
   },
   "dependencies": {
     "@astrojs/mdx": "^4.1.0",
     "@astrojs/sitemap": "^3.2.1",
-    "astro": "^5.4.1",
-    "resend": "^4.1.2"
+    "astro": "^5.4.1"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.4",
     "@eslint/js": "^9.21.0",
     "chokidar-cli": "^3.0.0",
     "cssnano": "^7.0.6",
@@ -29,6 +28,7 @@
     "prettier": "^3.5.2",
     "stylelint": "^16.15.0",
     "stylelint-config-standard": "^37.0.0",
+    "stylelint-sarif-formatter": "^1.0.7",
     "typescript": "^5.7.3",
     "typescript-eslint": "^8.25.0"
   }

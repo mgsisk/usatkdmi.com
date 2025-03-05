@@ -4,10 +4,10 @@ import { getCollection } from 'astro:content';
 const reviews = await getCollection('reviews');
 ---
 <div class="reviews">
-  {reviews.map(review=> (
+  {reviews.sort((a, b) => b.data.content.length - a.data.content.length).map(review=> (
     <figure>
       <p>{review.data.content}</p>
-      <figcaption>{review.data.title}</figcaption>
+      <figcaption><a href={review.data.url}>{review.data.title}</a></figcaption>
     </figure>
   ))}
 </div>

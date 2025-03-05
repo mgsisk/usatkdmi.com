@@ -18,6 +18,7 @@ const {title, excerpt} = Astro.props.frontmatter ? Astro.props.frontmatter : Ast
   <head>
     <meta charset="utf-8">
     <meta name="description" content={excerpt}>
+    <meta name="theme-color" content="#cd2e3a">
     <meta name="viewport" content="initial-scale=1,width=device-width">
     <title>{Astro.url.pathname === "/" ? "USA Tae Kwon Do" : `${title} • USA Tae Kwon Do`}</title>
     <link rel="author" href="/humans.txt">
@@ -35,9 +36,9 @@ const {title, excerpt} = Astro.props.frontmatter ? Astro.props.frontmatter : Ast
       <h1>USA Tae Kwon Do</h1>
       <p>{excerpt}</p>
       <video src="/srv/hero.mp4" poster="/srv/hero.jpg" autoplay loop muted playsinline></video>
-    </div> : null}
+    </div> : ''}
     <main>
-      {Astro.url.pathname !== "/" ? <h1>{title}</h1><p>{excerpt}</p> : null}
+      {Astro.url.pathname !== "/" ? <h1>{title}</h1><p>{excerpt}</p> : ''}
       <slot/>
     </main>
     <nav id="nav">

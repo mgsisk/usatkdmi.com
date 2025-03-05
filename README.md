@@ -1,9 +1,11 @@
 # USA Tae Kwon Do
 
-Repository for the official USA Tae Kwon Do website,
-https://usatkdmi.com.
+Official website for [USA Tae Kwon Do][] in Kalamazoo, MI.
 
 ## License
 
 The content of this project is fully protected under copyright. The underlying
-source code is licensed under the BSD 3-Clause License.
+source code is licensed under the [Expat License][].
+
+[expat license]: LICENSE.md
+[usa tae kwon do]: https://usatkdmi.com
