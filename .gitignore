@@ -1,3 +1,4 @@
 .astro/
+.sarif/
 dist/
 node_modules/
