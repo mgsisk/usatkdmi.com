@@ -10,7 +10,7 @@
     "posttest": "stylelint --custom-formatter node_modules/stylelint-sarif-formatter/index.js -o .sarif/stylelint.sarif src/styles",
     "prestart": "astro build",
     "pretest": "astro check",
-    "start": "chokidar 'public/**/*' 'src/**/*' -c 'astro build'; astro preview",
+    "start": "chokidar 'public/**/*' 'src/**/*' -c 'astro build' & astro preview",
     "test": "stylelint --fix src/styles; tsc --noEmit"
   },
   "dependencies": {
