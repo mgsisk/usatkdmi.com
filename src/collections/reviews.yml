@@ -1,17 +1,20 @@
-- id: 0
-  title: Amanda Richard
+- title: Amanda Richard
+  slug: amanda-richard
+  url: https://www.facebook.com/amanda.dionne.33/posts/pfbid0UgoVyMFGYk13sYkkgPtkQyjW3RPDPkai3YX6m1zU3DfkuQSFKPEbL49st6mFbJg7l
   content: |
     Grand Master M'Hammed and Master Sue are excellent instructors. My daughter
     and I both enjoy evening and Saturday classes at USA Tae Kwon Do!
 
-- id: 1
-  title: Berta Gonzales
+- title: Berta Gonzales
+  slug: berta-gonzales
+  url: https://www.facebook.com/berta.gonzales.9/posts/pfbid0z49oaMr8L3yyQiSEo3DqGMZSEzFWyLRfjC31v6tfGMTFpUMmjf77CZWC2zwsJr71l
   content: |
     My daughter started yesterday. She was nervous at first but she liked it
     alot.
 
-- id: 2
-  title: Beth Earl
+- title: Beth Earl
+  slug: beth-earl
+  url: "#"
   content: |
     There truly are not enough words or right words to describe my highest
     recommendation of USA Tae Kwon Do. My family started with Grand Master
@@ -22,100 +25,150 @@
     the late 1990s... I wish so much I has stuck with it. Ready to obtain my
     Black Belt!!
 
-- id: 3
-  title: Breeden Deeden
+- title: Breeden Deeden
+  slug: breeden-deeden
+  url: https://maps.app.goo.gl/pvByLG5gZSzukQFP9
   content: |
     I've been doing it for a year and a half and it's absolutely great the
     masters are very nice.
 
-- id: 4
-  title: Delores Marie Christopher-Martin
+- title: Delores Marie Christopher-Martin
+  slug: delores-marie-christopher-martin
+  url: "#"
   content: |
     Love, love, love this place! Great for self discipline, self respect, and
     honor.
 
-- id: 5
-  title: Greg Hunt
+- title: Greg Hunt
+  slug: greg-hunt
+  url: https://www.facebook.com/permalink.php?story_fbid=pfbid02VnMwJ5bwRvsuwbuu8diDF8BCtyhU2JhgFaRj6sHbmpX7tYgf3cfwq6G4r5XaQKi3l&id=100010777056769
   content: |
     Great place highly recommend it. My son Carter loves Grand Master M'Hammed.
 
-- id: 6
-  title: Kyle Saldaña
+- title: Kyle Saldaña
+  slug: kyle-saldana
+  url: https://maps.app.goo.gl/y4SbrvpgCDA8vEMj6
   content: |
     I love this school and everyone associated with it, I walked in on day one
     and everyone welcomed me with open arms and Grand Master M'Hammed and Master
     Sue treated me nothing short of a son. I have nothing but great things to
     say about them.
 
-- id: 7
-  title: Leann Bunny Wyman
+- title: Leann Bunny Wyman
+  slug: leann-bunny-wyman
+  url: https://www.facebook.com/leann.wyman/posts/pfbid092KZueujkMQMcp4szgGcpAL5TXbKZUYLEcQLUYG95Ad41rcVwkAzPhPKAbHuNbv5l
   content: |
     I love it... people are friendly... I highly recommend USA Tae Kwon Do for
     anyone of all ages.
 
-- id: 8
-  title: Lord Milan Bird
+- title: Lord Milan Bird
+  slug: lord-milan-bird
+  url: https://maps.app.goo.gl/2Fn2eUvKq99VBV1g7
   content: |
     Grand Master M'Hammed is a great leader and I'm very much looking forward to
     seeing where he guides my son.
 
-- id: 9
-  title: Lorenzo Smith
+- title: Lorenzo Smith
+  slug: lorenzo-smith
+  url: https://maps.app.goo.gl/ef85yw9eP2pMii1F7
   content: |
     My twin boys started going here and its wonderful.
 
-- id: 10
-  title: Mark Trudeau
+- title: Mark Trudeau
+  slug: mark-truedeau
+  url: https://www.facebook.com/coachtrudeau/posts/pfbid0o9wB5t3iACycPyKqipxXFRzazLSYXzUQEb3J9mTxxSVq6t76VuSsCVXEEEoCiZBEl
   content: |
     Fantastic school, perfect for all students, especially beginners. Highly
     recommended!
 
-- id: 11
-  title: Melynda Ayala
+- title: Melynda Ayala
+  slug: melynda-ayala
+  url: https://maps.app.goo.gl/wnH6r5FyzLriwQ5Y6
   content: |
     Love this place! Master Sue and Grand Master M'Hammed are EXCELLENT
     teachers! I have seen improvement in my grandkids behavior and confidence!
     Check it out
 
-- id: 12
-  title: Neva Carpenter
+- title: Neva Carpenter
+  slug: neva-carpenter
+  url: https://www.facebook.com/neva.garza.3/posts/pfbid02KUYaPSYXhBpDa17iwXZWdFGr1EUdFfHbpoPy6TjS1vHKKRJnMw2tu5W6aA485mu8l
   content: |
     I took my 4 year old to check out the class. He loved it. And I liked
     talking one on one with instructor. Great energy at this place!
 
-- id: 13
-  title: Patrick Baker
+- title: Patrick Baker
+  slug: patrick-baker
+  url: https://www.facebook.com/patrick.baker.35/posts/pfbid0hKvsJd9ErWjEquTExq48MdtET8L4s68uNwLEtcbaySMkPHg8MisTUgDLAzoeUAgwl
   content: |
     First time with my son Ayden and he absolutely loved it! Can't wait to go
     back!
 
-- id: 14
-  title: Precious Lane
+- title: Precious Lane
+  slug: precious-lane
+  url: https://maps.app.goo.gl/i7iaPDDimLS5MpMG8
   content: |
     This is by far one of the best places to come. Our son started practicing at
     5 and took a 4 year break at 10. Its only been 3 months and he has learned
     so much more! I definitely would recommend to anyone.
 
-- id: 15
-  title: Rodd Rumsey
+- title: Rodd Rumsey
+  slug: rodd-rumsey
+  url: "#"
   content: |
     Grand Master M'Hammed is the Real Deal. I am familiar with many Taekwondo /
     Martial Arts Schools and Master Instructors. Grand Master M'Hammed is
     definitely at the top of my list. I highly recommend this dojang and this
     teacher.
 
-- id: 16
-  title: Tammy Baldwin-Balaouras
+- title: Tammy Baldwin-Balaouras
+  slug: tammy-baldwin-balaouras
+  url: https://www.facebook.com/tammy.baldwinbalaouras/posts/pfbid0ch48GtdD3hr3NcJaft61nC9DJDvQDhvcms3eZpYgZn5tGdABSez4SYhPkfcUm58hl
   content: |
     The best. My daughter's and grandson and too many friends to mention. Works
     awesome with troubled and all. Best anywhere.
 
-- id: 17
-  title: Verónica Salazar
+- title: Verónica Salazar
+  slug: veronica-salazar
+  url: https://www.facebook.com/veronica.salazar.94/posts/pfbid0HgaVRiwFKNtn6o3VswCLSXkevghitnAPpX7pacgHZskBqex9UiKN8u2TKkn666Qcl
   content: |
     My kids just started and love it! The instructors are so good with the kids.
 
-- id: 18
-  title: Wyatt Rice
+- title: Wyatt Rice
+  slug: wyatt-rice
+  url: https://www.facebook.com/wyattearp113/posts/pfbid02xVj1i6PUNDp2qLCEoVomVBh3o83fAHDGpaAubT4fwcbNXP8M5A5mWKNnFAdJ63sCl
   content: |
     Great place to go instructions are great. I would recommend it to anyone.
+
+- title: Gautham Thyagarajan
+  slug: gautham-thyagarajan
+  url: https://maps.app.goo.gl/8HHgJFSZ1tSG6fwv5
+  content: |
+    Words are not enough to express. This place is beyond excellence. I would
+    say, the best of the best. Any one interested in learning martial arts
+    must give this place a try. All ages are taught here.
+
+- title: Rochelle Peake
+  slug: rochelle-peake
+  url: https://maps.app.goo.gl/Xx2uXWyojN4EgXAg9
+  content: |
+    Love this place and the instructor is so great!
+
+- title: Koryem Meterial
+  slug: koryem-meterial
+  url: https://maps.app.goo.gl/kFTmt89zhXCZiBQr6
+  content: |
+    They are great with kids!
+
+- title: Eulana Thompson
+  slug: eulana-thompson
+  url: https://maps.app.goo.gl/Soeey7F4dN6g1vac6
+  content: |
+    Champions arise! This is the place to shine.
+
+- title: Jada A.
+  slug: jada-a
+  url: https://maps.app.goo.gl/ri3ki6RUAUddLa1j9
+  content: |
+    I do private lessons a couple times a week when I’m done I feel
+    accomplished. I love doing tkd here because it’s awesome for you mentally
+    and physically. It has actually helped my anxiety and boost my mood.
