@@ -14,7 +14,7 @@ const programs = await getCollection('programs');
     <article>
     <div class="hero">
       <h2 id={program.data.title.toLowerCase().replace(/[^a-z0-9-_]/g, '').replace(/\s+|-+/g, '-')}>{program.data.title}</h2>
-      <Image src={program.data.image} alt=""/>
+      <Image src={program.data.image} format="avif" alt=""/>
     </div>
     <Content/>
   </article>

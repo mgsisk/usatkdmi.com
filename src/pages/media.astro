@@ -8,7 +8,7 @@ const media = await getCollection('media');
 <Layout title="Media" excerpt="Here's some of what you can expect at USA Tae Kwon Do.">
   <div class="media">
     {media.map(img=>(
-      <a href={img.data.file.src}><Image src={img.data.file} alt={img.data.alt ? img.data.alt : `Image ${img.id}`}/></a>
+      <a href={img.data.file.src}><Image src={img.data.file} format="avif" alt={img.data.alt ? img.data.alt : `Image ${img.id}`}/></a>
     ))}
   </div>
 </Layout>

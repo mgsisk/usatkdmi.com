@@ -5,7 +5,6 @@ iframe {
   width: 100vw;
 }
 
-
 @media (--medium) {
   iframe {
     aspect-ratio: 16 / 9;
@@ -15,5 +14,11 @@ iframe {
 @media (--large) {
   iframe {
     aspect-ratio: 2 / 1;
+  }
+}
+
+@media (--dark) {
+  iframe {
+    filter: invert(100%) hue-rotate(180deg);
   }
 }

@@ -17,7 +17,7 @@ const instructors = await getCollection('instructors');
         <h2>{instructor.data.title}</h2>
         <h3>{instructor.data.rank}</h3>
       </hgroup>
-      <Image src={instructor.data.image} alt={"Portrait of " + instructor.data.title}/>
+      <Image src={instructor.data.image} format="avif" alt={"Portrait of " + instructor.data.title}/>
     </div>
     <Content/>
   </article>
